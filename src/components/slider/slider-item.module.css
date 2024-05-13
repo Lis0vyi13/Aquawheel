@@ -1,0 +1,10 @@
+.title {
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    rgb(255, 255, 255) 0%,
+    rgb(215, 215, 215) 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

@@ -1,0 +1,28 @@
+@import url("./fonts/stylesheet.css");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: "Mont";
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1290px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.navbar-container {
+  max-width: 1150px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
