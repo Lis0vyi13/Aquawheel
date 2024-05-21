@@ -1,0 +1,22 @@
+@-webkit-keyframes slides {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-40%);
+  }
+}
+
+@keyframes slides {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.marquee {
+  -webkit-animation: slides 35s linear infinite;
+  animation: slides 35s linear infinite;
+}

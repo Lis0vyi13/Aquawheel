@@ -1,0 +1,3 @@
+.category:hover .category-bg::after {
+  opacity: 0.2;
+}

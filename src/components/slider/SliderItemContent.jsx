@@ -6,7 +6,7 @@ const SliderItemContent = ({ content, mobile }) => {
   const { title, subtitle, btn, i } = content;
   return mobile ? (
     <div className="absolute w-full h-full top-0 left-0">
-      <div className="absolute left-[48%] top-[31%] xs:top-[27%] -translate-x-1/2 -translate-y-1/2">
+      <div className="absolute left-[49%] top-[31%] xs:top-[27%] -translate-x-1/2 -translate-y-1/2">
         <div
           className={`text-center w-fit xxs:min-w-[400px] tracking-[0.11em] pl-5`}
         >
@@ -18,7 +18,7 @@ const SliderItemContent = ({ content, mobile }) => {
           <h2 className="font-[600px] tracking-[0.0001em] text-[11px] xs:text-[14px] text-white">
             {subtitle[i]}
           </h2>
-          <div className="absolute left-[51%] top-[60px] xs:top-16 tracking-[0.03em] -translate-x-1/2 h-[30px] w-[176px] text-[12px] xs:h-[50px] xs:w-[240px] xs:text-[16px]">
+          <div className="absolute left-[51%] top-[40px] xs:top-14 tracking-[0.03em] -translate-x-1/2 h-[30px] w-[176px] text-[12px] xs:h-[50px] xs:w-[240px] xs:text-[16px]">
             <Button href={btn.href[i]}>{btn.title}</Button>
           </div>
         </div>
@@ -28,7 +28,7 @@ const SliderItemContent = ({ content, mobile }) => {
     <div className="absolute">
       <div className="pt-[258px] pl-[75px] inline-block">
         <div
-          className={`border-l-[2px] min-w-[700px] tracking-[0.11em] pl-5 ${
+          className={`border-l-[2px] min-w-[450px] break-all tracking-[0.11em] pl-5 ${
             i === 0 ? "border-l-main" : "border-l-white"
           }`}
         >
@@ -37,7 +37,7 @@ const SliderItemContent = ({ content, mobile }) => {
           >
             {title[i]}
           </h1>
-          <h2 className="font-[600px] tracking-[0.015em] mt-[-12px] text-[20px] text-white">
+          <h2 className="font-[600px] tracking-[0.015em] text-[20px] text-white">
             {subtitle[i]}
           </h2>
         </div>

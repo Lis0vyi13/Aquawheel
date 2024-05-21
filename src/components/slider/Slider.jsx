@@ -89,7 +89,11 @@ const Slider = ({ content }) => {
           ))}
         </div>
         <div className="mobile-navigation absolute flex left-1/2 bottom-3 -translate-x-1/2 -translate-y-1/2">
-          <SliderDots slide={slide} length={SLIDER_IMAGES_LENGTH} />
+          <SliderDots
+            setSlide={handleNavigationButtonClick}
+            slide={slide}
+            length={SLIDER_IMAGES_LENGTH}
+          />
         </div>
       </div>
     </>

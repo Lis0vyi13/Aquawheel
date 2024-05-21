@@ -1,0 +1,42 @@
+@media (min-width: 1px) {
+  .gridTemplate {
+    grid-template-areas:
+      "category1"
+      "category2"
+      "category3"
+      "category4"
+      "category5";
+  }
+}
+@media (min-width: 768px) {
+  .gridTemplate {
+    grid-template-areas:
+      "category1 category1 category1 category1 category1 category2 category2 category2 category2 category2"
+      "category3 category3 category3 category3 category3 category5 category5 category5 category5 category5"
+      "category4 category4 category4 category4 category4 category4 category4 category4 category4 category4";
+  }
+}
+
+@media (min-width: 1240px) {
+  .gridTemplate {
+    grid-template-areas:
+      "category1 category1 category1 category1 category1 category2 category2 category2 category2 category2"
+      "category3 category3 category3 category4 category4 category4 category4 category5 category5 category5";
+  }
+}
+
+.gridItem1 {
+  grid-area: category1;
+}
+.gridItem2 {
+  grid-area: category2;
+}
+.gridItem3 {
+  grid-area: category3;
+}
+.gridItem4 {
+  grid-area: category4;
+}
+.gridItem5 {
+  grid-area: category5;
+}

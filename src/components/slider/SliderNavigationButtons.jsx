@@ -7,7 +7,7 @@ const SliderNavigationButtons = ({ onClick, slide, imgArr }) => {
     onClick(slide + 1 >= imgArr.length ? slide : slide + 1);
 
   return (
-    <div className="absolute z-20 bottom-[40px] left-10 flex items-center gap-4">
+    <div className="absolute z-[1] bottom-[40px] left-10 flex items-center gap-4">
       <div className="h-[41px] w-[41px]">
         <TransparentNavigationButton onClick={handlePrevClick} />
       </div>
