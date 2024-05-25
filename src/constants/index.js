@@ -27,6 +27,8 @@ import swiper_3 from "/img/swiper/swiper_3.png";
 import swiper_4 from "/img/swiper/swiper_4.png";
 import swiper_5 from "/img/swiper/swiper_5.png";
 
+import aquawheel_logo from "/icons/aquawheel_white.svg";
+
 export const LANGUAGES = ["ENG", "UA"];
 
 export const resources = {
@@ -118,7 +120,47 @@ export const resources = {
         { img: swiper_5, alt: "swiper__img-5" },
       ],
     },
+    form: {
+      title: "Write us",
+      inputs: [
+        {
+          type: "text",
+          placeholder: "Your name",
+          required: true,
+        },
+        {
+          type: "text",
+          placeholder: "Company name",
+          required: true,
+        },
+        {
+          type: "tel",
+          placeholder: "Phone number",
+          required: true,
+        },
+        {
+          type: "email",
+          placeholder: "E-mail",
+          required: true,
+        },
+        {
+          type: "text",
+          placeholder: "Comment",
+          required: false,
+        },
+      ],
+      btn: "CONTACT US",
+    },
+    footer: {
+      logo: aquawheel_logo,
+      tel: "+38 067 630 63 68",
+      email: "sales@start.eu.com",
+      address: "208B Bohdana Khmelnytskoho Ave, Dnipro, Ukraine",
+      identification: ["EDRPOU 40863700", "INN 40863700462449000"],
+      notes: ["©Aquavil LLC"],
+    },
   },
+
   UA: {
     navbar: {
       btn: { title: "Зв'язатися з нами", href: "" },
@@ -205,7 +247,47 @@ export const resources = {
         { img: swiper_3, alt: "swiper__img-3" },
         { img: swiper_4, alt: "swiper__img-4" },
         { img: swiper_5, alt: "swiper__img-5" },
+        { img: swiper_1, alt: "swiper__img-1" },
       ],
+    },
+    form: {
+      title: "Напишіть нам",
+      inputs: [
+        {
+          type: "text",
+          placeholder: "Ваше ім'я",
+          required: true,
+        },
+        {
+          type: "text",
+          placeholder: "Назва компанії",
+          required: true,
+        },
+        {
+          type: "tel",
+          placeholder: "Номер телефону",
+          required: true,
+        },
+        {
+          type: "email",
+          placeholder: "E-mail",
+          required: true,
+        },
+        {
+          type: "text",
+          placeholder: "Коментар",
+          required: false,
+        },
+      ],
+      btn: "ЗВ’ЯЗАТИСЯ З НАМИ",
+    },
+    footer: {
+      logo: aquawheel_logo,
+      tel: "+38 067 630 63 68",
+      email: "sales@start.eu.com",
+      address: "208B Bohdana Khmelnytskoho Ave, Dnipro, Ukraine",
+      identification: ["EDRPOU 40863700", "INN 40863700462449000"],
+      notes: ["©Aquavil LLC"],
     },
   },
 };

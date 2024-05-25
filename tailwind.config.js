@@ -10,6 +10,7 @@ export default {
       dark: "#313131",
       white: "#fff",
       whiteHover: "rgba(220, 220, 220, 0.8)",
+      transparent: "transparent",
     },
     screens: {
       xxs: "375px",

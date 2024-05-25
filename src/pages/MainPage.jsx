@@ -4,7 +4,9 @@ import Brands from "../components/brands/Brands";
 import InnovativePurity from "../components/InnovativePurity";
 import PrivateLabel from "../components/PrivateLabel";
 import Marquee from "../components/marquee/Marquee";
-import Swiper from "../components/Swiper";
+import Swiper from "../components/swiper/Swiper";
+import Footer from "../components/footer/Footer";
+
 const MainPage = () => {
   return (
     <div className="main-page">
@@ -18,6 +20,9 @@ const MainPage = () => {
       </div>
       <div className="mt-[89px] xs:mt-[140px] md:mt-[210px]">
         <Swiper />
+      </div>
+      <div className="mt-10">
+        <Footer />
       </div>
     </div>
   );
