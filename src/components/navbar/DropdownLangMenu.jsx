@@ -1,9 +1,9 @@
 import { useState } from "react";
 
-import { LANGUAGES } from "../../constants";
-
 import { useLanguage } from "../../hooks/useLanguage";
 import { useActions } from "../../hooks/useActions";
+
+import { LANGUAGES } from "../../constants";
 
 const DropdownLangMenu = () => {
   const language = useLanguage();
@@ -35,7 +35,7 @@ const DropdownLangMenu = () => {
             xmlns="http://www.w3.org/2000/svg"
           >
             <path
-              className="stroke-white sm:stroke-[#43ACDF]"
+              className="stroke-white xsSm:stroke-[#43ACDF]"
               d="M0.999023 1.5L6.99902 7.5L12.999 1.5"
               strokeWidth="2"
             />
@@ -47,7 +47,7 @@ const DropdownLangMenu = () => {
               (lang) =>
                 lang !== selectedLanguage && (
                   <li
-                    className="relative duration-300 rounded-[13px] py-2 outline px-4 outline-[1px] active:text-main active:bg-white sm:active: sm:bg-white hover:text-whiteHover sm:hover:text-mainHover w-full p-1 cursor-pointer"
+                    className="relative duration-300 rounded-[13px] py-1 outline px-3 outline-[1px] active:text-main active:bg-white sm:active: sm:bg-white hover:text-whiteHover sm:hover:text-mainHover w-full p-1 cursor-pointer"
                     onClick={() => handleLanguageChange(lang)}
                     key={lang}
                   >

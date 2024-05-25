@@ -13,7 +13,7 @@ export default {
       transparent: "transparent",
     },
     screens: {
-      xxs: "375px",
+      xxs: "370px",
       xs: "480px",
       xsSm: "590px",
       sm: "640px",
@@ -27,6 +27,8 @@ export default {
       backgroundImage: {
         start: "url('/img/start.jpg')",
         brix: "url('/img/brix.jpg')",
+        buttonGradient:
+          "radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(233, 233, 233, 1) 100%);",
         grayGradient:
           "radial-gradient(113.33% 114.68% at 78.43% 91.02%, rgb(255, 255, 255) 0%, rgb(233, 233, 233) 100%);",
         blueGradient: "linear-gradient(232deg, #88d2f6 0%, #43acdf 100%);",

@@ -1,8 +1,8 @@
 import Slider from "./slider/Slider";
 
-import { resources } from "../constants";
-
 import { useLanguage } from "../hooks/useLanguage";
+
+import { resources } from "../constants";
 
 const Intro = () => {
   const language = useLanguage();

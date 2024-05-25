@@ -159,6 +159,10 @@ export const resources = {
       identification: ["EDRPOU 40863700", "INN 40863700462449000"],
       notes: ["©Aquavil LLC"],
     },
+    pageNotFound: {
+      title: "PAGE NOT FOUND",
+      btn: "BACK TO HOME",
+    },
   },
 
   UA: {
@@ -288,6 +292,10 @@ export const resources = {
       address: "208B Bohdana Khmelnytskoho Ave, Dnipro, Ukraine",
       identification: ["EDRPOU 40863700", "INN 40863700462449000"],
       notes: ["©Aquavil LLC"],
+    },
+    pageNotFound: {
+      title: "СТОРІНКА НЕ ЗНАЙДЕНА",
+      btn: "ПОВЕРНУТИСЯ НА ГОЛОВНУ",
     },
   },
 };
