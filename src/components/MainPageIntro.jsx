@@ -1,12 +1,12 @@
-import Slider from "./slider/Slider";
-
 import { useLanguage } from "../hooks/useLanguage";
+
+import Slider from "./slider/Slider";
 
 import { resources } from "../constants";
 
-const Intro = () => {
+const MainPageIntro = () => {
   const language = useLanguage();
-  const content = resources[language].intro;
+  const content = resources[language].mainPageIntro;
 
   return (
     <section className="intro">
@@ -19,4 +19,4 @@ const Intro = () => {
   );
 };
 
-export default Intro;
+export default MainPageIntro;

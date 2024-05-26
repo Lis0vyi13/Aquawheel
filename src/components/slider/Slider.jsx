@@ -1,5 +1,4 @@
-import { useEffect, useState } from "react";
-import { useSwipeable } from "react-swipeable";
+import useSlider from "../../hooks/useSlider";
 
 import SliderNavigationButtons from "./SliderNavigationButtons";
 import SliderItemContent from "./SliderItemContent";
@@ -10,33 +9,8 @@ import { mobileSliderImages, pcSlidersImg } from "../../constants";
 const Slider = ({ content }) => {
   const SLIDER_IMAGES_LENGTH = pcSlidersImg.length;
 
-  const [slide, setSlide] = useState(0);
-  const [intervalId, setIntervalId] = useState(null);
-
-  const handleNavigationButtonClick = (newSlide) => {
-    setSlide(newSlide);
-    clearInterval(intervalId);
-  };
-
-  useEffect(() => {
-    const id = setInterval(() => {
-      setSlide((state) => (state + 1 >= SLIDER_IMAGES_LENGTH ? 0 : state + 1));
-    }, 5000);
-    setIntervalId(id);
-
-    return () => {
-      clearInterval(id);
-    };
-  }, [SLIDER_IMAGES_LENGTH, slide]);
-
-  const handlers = useSwipeable({
-    onSwipedLeft: () =>
-      handleNavigationButtonClick(
-        slide + 1 >= pcSlidersImg.length ? slide : slide + 1,
-      ),
-    onSwipedRight: () =>
-      handleNavigationButtonClick(slide - 1 < 0 ? 0 : slide - 1),
-  });
+  const { slide, handleNavigationButtonClick, handlers } =
+    useSlider(SLIDER_IMAGES_LENGTH);
 
   return (
     <>

@@ -1,15 +1,15 @@
 import { useEffect, useRef } from "react";
 import { createPortal } from "react-dom";
 
+import { useLanguage } from "../../hooks/useLanguage";
+import { useBurger } from "../../hooks/useBurger";
+import { useActions } from "../../hooks/useActions";
+
 import Burger from "./Burger";
 import DropdownLangMenu from "./DropdownLangMenu";
 import FooterContent from "../footer/FooterContent";
 
 import TransparentButton from "../../ui/TransparentButton";
-
-import { useLanguage } from "../../hooks/useLanguage";
-import { useBurger } from "../../hooks/useBurger";
-import { useActions } from "../../hooks/useActions";
 
 import { resources } from "../../constants";
 

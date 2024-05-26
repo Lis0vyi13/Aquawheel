@@ -1,5 +1,7 @@
 import { useEffect, useRef, useState } from "react";
+
 import { useLanguage } from "../../hooks/useLanguage";
+
 import { resources } from "../../constants";
 
 import styles from "./swiper.module.css";

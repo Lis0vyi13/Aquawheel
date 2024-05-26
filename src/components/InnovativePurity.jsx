@@ -1,6 +1,6 @@
-import ContentBlock from "../ui/ContentBlock";
-
 import { useLanguage } from "../hooks/useLanguage";
+
+import ContentBlock from "../ui/ContentBlock";
 
 import { resources } from "../constants";
 

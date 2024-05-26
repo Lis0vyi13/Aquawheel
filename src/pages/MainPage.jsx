@@ -1,4 +1,4 @@
-import Intro from "../components/Intro";
+import MainPageIntro from "../components/MainPageIntro";
 import Categories from "../components/categories/Categories";
 import Brands from "../components/brands/Brands";
 import InnovativePurity from "../components/InnovativePurity";
@@ -10,7 +10,7 @@ import SidebarForm from "../components/form/SidebarForm";
 const MainPage = () => {
   return (
     <>
-      <Intro />
+      <MainPageIntro />
       <Categories />
       <Brands />
       <InnovativePurity />

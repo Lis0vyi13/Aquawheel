@@ -1,10 +1,10 @@
 import { useEffect } from "react";
 import { createPortal } from "react-dom";
 
-import FooterContent from "../footer/FooterContent";
-
 import { useForm } from "../../hooks/useForm";
 import { useActions } from "../../hooks/useActions";
+
+import FooterContent from "../footer/FooterContent";
 
 const SidebarForm = () => {
   const isFormOpened = useForm();

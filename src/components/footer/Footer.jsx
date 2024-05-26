@@ -1,7 +1,7 @@
+import { useLanguage } from "../../hooks/useLanguage";
+
 import FooterContent from "./FooterContent";
 import { DesktopFooterSVG, MobileFooterSVG } from "./FooterSVGs";
-
-import { useLanguage } from "../../hooks/useLanguage";
 
 import { resources } from "../../constants";
 

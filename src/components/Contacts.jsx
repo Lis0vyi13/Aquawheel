@@ -10,7 +10,7 @@ const Contacts = ({ sidebarForm }) => {
     <div
       className={` ${
         sidebarForm ? "hidden lg:block" : "block"
-      } contacts text-white mt-[83px] xs:mt-[65px] md:mt-[80px] lg:mt-[222px] max-w-[415px]`}
+      } contacts text-white mt-[53px] xs:mt-[65px] md:mt-[80px] lg:mt-[222px] max-w-[415px]`}
     >
       <a
         className="inline-block w-[202px] h-[43px] sm:w-[274px] sm:h-[58px]"

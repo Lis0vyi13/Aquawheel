@@ -1,8 +1,8 @@
+import { useLanguage } from "../../hooks/useLanguage";
+
 import Brand from "./Brand";
 
 import Title from "../../ui/Title";
-
-import { useLanguage } from "../../hooks/useLanguage";
 
 import { resources } from "../../constants";
 

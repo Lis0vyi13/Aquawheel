@@ -29,6 +29,14 @@ import swiper_5 from "/img/swiper/swiper_5.png";
 
 import aquawheel_logo from "/icons/aquawheel_white.svg";
 
+import brix_intro from "/img/intros/brix_intro.webp";
+import coffemachines_intro from "/img/intros/coffemachines_intro.webp";
+import dishes_intro from "/img/intros/dishes_intro.webp";
+import home_intro from "/img/intros/home_intro.webp";
+import pro_intro from "/img/intros/pro_intro.webp";
+import start_intro from "/img/intros/start_intro.webp";
+import washing_intro from "/img/intros/washing_intro.webp";
+
 export const LANGUAGES = ["ENG", "UA"];
 
 export const resources = {
@@ -36,8 +44,8 @@ export const resources = {
     navbar: {
       btn: { title: "Contact Us", href: "" },
     },
-    intro: {
-      btn: { title: "GO TO CATALOG", href: ["", ""] },
+    mainPageIntro: {
+      btn: { title: "GO TO CATALOG", href: ["/#/washing", "/#/washing"] },
       title: ["POWERCAPS", "DISH WASH"],
       subtitle: [
         "Careful performance under any conditions",
@@ -163,14 +171,42 @@ export const resources = {
       title: "PAGE NOT FOUND",
       btn: "BACK TO HOME",
     },
+    washingPage: {
+      intro: {
+        title: "tableware",
+        description: [
+          "In the process of developing laundry products, we carefully study and take into account all the key factors that are important to consumers in this category to offer solutions that best meet modern requirements and preferences.",
+          "By choosing Aquawheel products, you can be sure of high quality, efficiency and full compliance with your expectations and requirements.",
+        ],
+        bg: washing_intro,
+      },
+      brands: [
+        { title: "START", img: start_pack, href: "" },
+        { title: "BRIX", img: brix_capsules, href: "" },
+      ],
+    },
+    dishesPage: {
+      intro: {
+        title: "dishes",
+        description: [
+          "In the development of dishwashing detergents used in dishwashers, the Aquawheel team pays close attention to the needs and expectations of users.",
+          "Our goal is to create products that ensure not only clean and hygienic dishes, but also give them an exceptional shine, taking care of the durability of the dishwasher itself.",
+        ],
+        bg: dishes_intro,
+      },
+      brands: [
+        { title: "START", img: start_pack, href: "" },
+        { title: "BRIX", img: brix_capsules, href: "" },
+      ],
+    },
   },
 
   UA: {
     navbar: {
       btn: { title: "Зв'язатися з нами", href: "" },
     },
-    intro: {
-      btn: { title: "ПЕРЕЙТИ В КАТАЛОГ", href: ["", ""] },
+    mainPageIntro: {
+      btn: { title: "ПЕРЕЙТИ В КАТАЛОГ", href: ["/#/washing", "/#/washing"] },
       title: ["POWERCAPS", "DISH WASH"],
       subtitle: [
         "Дбайлива ефективність за будь-яких умов",
@@ -296,6 +332,34 @@ export const resources = {
     pageNotFound: {
       title: "СТОРІНКА НЕ ЗНАЙДЕНА",
       btn: "ПОВЕРНУТИСЯ НА ГОЛОВНУ",
+    },
+    washingPage: {
+      intro: {
+        title: "ПРАННЯ",
+        description: [
+          "У процесі розробки продуктів для прання ми ретельно вивчаємо та враховуємо всі ключові фактори, важливі для споживачів у даній категорії, щоб запропонувати рішення, що найкраще відповідають сучасним вимогам та уподобанням.",
+          "Вибираючи продукцію від компанії Aquawheel, ви можете бути впевнені у високій якості, ефективності та повній відповідності ваших очікувань та вимог.",
+        ],
+        bg: washing_intro,
+      },
+      brands: [
+        { title: "START", img: start_pack, href: "" },
+        { title: "BRIX", img: brix_capsules, href: "" },
+      ],
+    },
+    dishesPage: {
+      intro: {
+        title: "ПОСУДУ",
+        description: [
+          "У розробці засобів для миття посуду, що використовуються в посудомийних машинах, команда Aquawheel уважно ставиться до потреб та очікувань користувачів.",
+          "Наша мета - створювати продукти, що забезпечують не тільки чистоту та гігієну посуду, але й надають їй виняткового блиску, піклуючись про довговічність самої посудомийної машини.",
+        ],
+        bg: dishes_intro,
+      },
+      brands: [
+        { title: "START", img: start_pack, href: "" },
+        { title: "BRIX", img: brix_capsules, href: "" },
+      ],
     },
   },
 };

@@ -38,6 +38,10 @@ export default {
           "radial-gradient(91.7% 107.54% at 39.61% 56.25%, rgb(85, 204, 237) 0%, rgb(0, 61, 165) 100%);",
         orangeGradient:
           "radial-gradient(91.7% 107.54% at 39.61% 56.25%, rgb(255, 178, 84) 0%, rgb(255, 74, 0) 82.65896439552307%);",
+        activeBrandStart:
+          "radial-gradient(91.7% 107.54% at 39.61% 56.25%, rgb(85, 204, 237) 0%, rgb(0, 61, 165) 100%);",
+        activeBrandBrix:
+          "radial-gradient(91.7% 107.54% at 39.61% 56.25%, rgb(255, 178, 84) 0%, rgb(255, 74, 0) 82.65896439552307%);",
       },
     },
   },

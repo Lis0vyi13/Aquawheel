@@ -1,7 +1,7 @@
-import Button from "../../ui/button/Button";
-
 import { useLanguage } from "../../hooks/useLanguage";
 import { useActions } from "../../hooks/useActions";
+
+import Button from "../../ui/button/Button";
 
 import { resources } from "../../constants";
 
@@ -48,7 +48,7 @@ const Form = ({ sidebarForm }) => {
         })}
       </div>
       <div
-        className={`w-full lg:w-[323px] mt-2 md:mt-7 h-[40px] sm:h-[55px] text-[17px] xs:text-[19px] sm:text-[22px] ${
+        className={`w-full lg:w-[323px] mt-7 h-[40px] sm:h-[55px] text-[17px] xs:text-[19px] sm:text-[22px] ${
           sidebarForm ? "flex justify-center md:justify-normal" : ""
         }`}
       >

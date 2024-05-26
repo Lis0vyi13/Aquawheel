@@ -1,9 +1,10 @@
+import { useLanguage } from "../../hooks/useLanguage";
+
 import Category from "./Category";
 
 import Title from "../../ui/Title";
 
 import { resources } from "../../constants";
-import { useLanguage } from "../../hooks/useLanguage";
 
 import styles from "./categories.module.css";
 
