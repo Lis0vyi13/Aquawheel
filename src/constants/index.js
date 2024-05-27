@@ -9,8 +9,8 @@ import for_home from "/img/categories/for-home.png";
 import washing from "/img/categories/washing.png";
 import pro from "/img/categories/pro.png";
 
-import start_pack from "/products/start_pack.png";
-import brix_capsules from "/products/brix_capsules.png";
+import start_pack from "/img/start_pack.png";
+import brix_capsules from "/img/brix_capsules.png";
 
 import purity_1 from "/img/purity/purity_1.png";
 import purity_2 from "/img/purity/purity_2.png";
@@ -30,12 +30,25 @@ import swiper_5 from "/img/swiper/swiper_5.png";
 import aquawheel_logo from "/icons/aquawheel_white.svg";
 
 import brix_intro from "/img/intros/brix_intro.webp";
+import start_intro from "/img/intros/start_intro.webp";
 import coffemachines_intro from "/img/intros/coffemachines_intro.webp";
 import dishes_intro from "/img/intros/dishes_intro.webp";
 import home_intro from "/img/intros/home_intro.webp";
 import pro_intro from "/img/intros/pro_intro.webp";
-import start_intro from "/img/intros/start_intro.webp";
 import washing_intro from "/img/intros/washing_intro.webp";
+
+import Powercaps_baby from "/products/Powercaps_baby.png";
+import Powercaps_color from "/products/Powercaps_color.png";
+import powercaps_universal_750ml from "/products/powercaps_universal_750ml.png";
+import Powercaps_universal from "/products/Powercaps_universal.png";
+import start_classic_30 from "/products/start_classic_30.png";
+import start_classic_60 from "/products/start_classic_60.png";
+import start_classic_100 from "/products/start_classic_100.png";
+import start_maximum_28 from "/products/start_maximum_28.png";
+import start_maximum_55 from "/products/start_maximum_55.png";
+import start_maximum_90 from "/products/start_maximum_90.png";
+import start_powder_1kg from "/products/start_powder_1kg.png";
+import start_powder_3kg from "/products/start_powder_3kg.png";
 
 export const LANGUAGES = ["ENG", "UA"];
 
@@ -57,6 +70,7 @@ export const resources = {
       categoriesList: [
         {
           title: "For dishes",
+          id: "dishes",
           img: dishes,
           href: "",
           isLarge: true,
@@ -64,6 +78,7 @@ export const resources = {
         },
         {
           title: "For washing",
+          id: "washing",
           img: washing,
           href: "",
           isLarge: true,
@@ -71,6 +86,7 @@ export const resources = {
         },
         {
           title: "For home",
+          id: "home",
           img: for_home,
           href: "",
           isLarge: false,
@@ -78,12 +94,20 @@ export const resources = {
         },
         {
           title: "For coffeemaker",
+          id: "coffeemaker",
           img: coffee_machine,
           href: "",
           isLarge: false,
           isBlue: false,
         },
-        { title: "PRO", img: pro, href: "", isLarge: false, isBlue: true },
+        {
+          title: "PRO",
+          id: "pro",
+          img: pro,
+          href: "",
+          isLarge: false,
+          isBlue: true,
+        },
       ],
     },
     brands: {
@@ -180,10 +204,6 @@ export const resources = {
         ],
         bg: washing_intro,
       },
-      brands: [
-        { title: "START", img: start_pack, href: "" },
-        { title: "BRIX", img: brix_capsules, href: "" },
-      ],
     },
     dishesPage: {
       intro: {
@@ -194,11 +214,196 @@ export const resources = {
         ],
         bg: dishes_intro,
       },
-      brands: [
-        { title: "START", img: start_pack, href: "" },
-        { title: "BRIX", img: brix_capsules, href: "" },
-      ],
     },
+    coffemachinesPage: {
+      intro: {
+        title: "coffemachines",
+        description: [
+          "Keep your tools and equipment clean and extend their life with cleaning products from Aquawheel.",
+          "Our products not only effectively remove any contamination and provide plaque, but also have a gentle effect, keeping your equipment in perfect condition. With Aquawheel, you get a guarantee of excellent results, longevity support and constant performance of your equipment without risking its mechanisms, parts and surfaces.",
+        ],
+        bg: coffemachines_intro,
+      },
+    },
+    homePage: {
+      intro: {
+        title: "home",
+        description: [
+          "Keep your tools and equipment clean and extend their life with cleaning products from Aquawheel.",
+          "Our products not only effectively remove any contamination and provide plaque, but also have a gentle effect, keeping your equipment in perfect condition. With Aquawheel, you get a guarantee of excellent results, longevity support and constant performance of your equipment without risking its mechanisms, parts and surfaces.",
+        ],
+        bg: home_intro,
+      },
+    },
+    proPage: {
+      intro: {
+        title: "pro",
+        description: [
+          "In the development of dishwashing detergents used in dishwashers, the Aquawheel team pays close attention to the needs and expectations of users.",
+          "Our goal is to create products that ensure not only the cleanliness and hygiene of the dishes, but also give them an exceptional shine, taking care of the durability of the dishwasher itself.",
+        ],
+        bg: pro_intro,
+      },
+    },
+    startPage: {
+      intro: {
+        title: "start",
+        description: [
+          "START has become a symbol for those who highly value quality and reliability. START washing and laundry products, tested by time, guarantee the solution of any household tasks, ensuring efficiency and ease of use.",
+          "Only the best components are used here, taking into account consumer tests and practices. Unique combinations of formulas and active ingredients allow you to achieve remarkable results in washing and washing.",
+          "Thanks to its hypoallergenic properties, you can rest assured about the health of your family. START takes care of your time and peace of mind, taking care of simple daily chores!",
+        ],
+        bg: start_intro,
+      },
+    },
+    brixPage: {
+      intro: {
+        title: "brix",
+        description: [
+          "Your small but reliable helper in taking care of the house. The Brix brand was created for careful and economical people who value practicality and versatility.",
+          "Brix is a brand that eliminates the need to choose between economy and efficiency, it embodies the perfect balance, making everyday tasks of home care easier and more enjoyable.",
+          "With Brix, every day of your home is filled with cleanliness and order, while you save time and resources for the real joys of life.",
+        ],
+        bg: brix_intro,
+      },
+    },
+    products: [
+      {
+        name: "Powercaps Universal",
+        description: "Washing capsules",
+        capsules: 36,
+        grams: "230g",
+        img: Powercaps_universal,
+        categories: ["washing", "pro", "coffeemaker"],
+        producers: ["brix", "start"],
+      },
+      {
+        name: "Powercaps Baby",
+        description: "Washing capsules",
+        capsules: 36,
+        grams: "230g",
+        img: Powercaps_baby,
+        categories: ["washing", "home", "pro", "coffeemaker"],
+        producers: ["brix", "start"],
+      },
+      {
+        name: "Powercaps Color",
+        description: "Washing capsules",
+        capsules: 36,
+        grams: "230g",
+        img: Powercaps_color,
+        categories: ["washing", "home", "pro", "coffeemaker"],
+        producers: ["brix", "start"],
+      },
+      {
+        name: "Powercaps Universal",
+        description: "Washing capsules",
+        capsules: 12,
+        grams: "230g",
+        img: Powercaps_universal,
+        categories: ["washing", "home", "pro", "coffeemaker"],
+        producers: ["brix", "start"],
+      },
+      {
+        name: "Powercaps Baby",
+        description: "Washing capsules",
+        capsules: 12,
+        grams: "115g",
+        img: Powercaps_baby,
+        categories: ["washing", "home", "pro", "coffeemaker"],
+        producers: ["brix", "start"],
+      },
+      {
+        name: "Powercaps Color",
+        description: "Washing capsules",
+        capsules: 12,
+        grams: "115g",
+        img: Powercaps_color,
+        categories: ["washing", "home", "pro", "coffeemaker"],
+        producers: ["brix", "start"],
+      },
+      {
+        name: "Start Classic",
+        description: "Dishwashing tablets",
+        capsules: 100,
+        grams: "1.8kg",
+        img: start_classic_100,
+        categories: ["dishes"],
+        producers: null,
+      },
+      {
+        name: "Start Classic",
+        description: "Dishwashing tablets",
+        capsules: 60,
+        grams: "1.08kg",
+        img: start_classic_60,
+        categories: ["dishes"],
+        producers: null,
+      },
+      {
+        name: "Start Classic",
+        description: "Dishwashing tablets",
+        capsules: 30,
+        grams: "540g",
+        img: start_classic_30,
+        categories: ["dishes"],
+        producers: null,
+      },
+      {
+        name: "Start Maximum",
+        description: "Dishwashing tablets",
+        capsules: 90,
+        grams: "115g",
+        img: start_maximum_90,
+        categories: ["dishes"],
+        producers: null,
+      },
+      {
+        name: "Start Maximum",
+        description: "Dishwashing tablets",
+        capsules: 55,
+        grams: "115g",
+        img: start_maximum_55,
+        categories: ["dishes"],
+        producers: null,
+      },
+      {
+        name: "Start Maximum",
+        description: "Dishwashing tablets",
+        capsules: 28,
+        grams: "115g",
+        img: start_maximum_28,
+        categories: ["dishes"],
+        producers: null,
+      },
+      {
+        name: "Start Powder",
+        description: "Diswashing powder",
+        capsules: null,
+        grams: "1kg",
+        img: start_powder_1kg,
+        categories: ["dishes"],
+        producers: null,
+      },
+      {
+        name: "Start Powder",
+        description: "Diswashing powder",
+        capsules: null,
+        grams: "3kg",
+        img: start_powder_3kg,
+        categories: ["dishes"],
+        producers: null,
+      },
+      {
+        name: "Powercaps Universal",
+        description: "Washing capsules",
+        capsules: 36,
+        grams: "230g",
+        img: powercaps_universal_750ml,
+        categories: ["home"],
+        producers: null,
+      },
+    ],
   },
 
   UA: {
@@ -218,6 +423,7 @@ export const resources = {
       categoriesList: [
         {
           title: "Для посуду",
+          id: "dishes",
           img: dishes,
           href: "",
           isLarge: true,
@@ -225,6 +431,7 @@ export const resources = {
         },
         {
           title: "Для прання",
+          id: "washing",
           img: washing,
           href: "",
           isLarge: true,
@@ -232,6 +439,7 @@ export const resources = {
         },
         {
           title: "Для дому",
+          id: "home",
           img: for_home,
           href: "",
           isLarge: false,
@@ -239,12 +447,20 @@ export const resources = {
         },
         {
           title: "Для кавомашин",
+          id: "coffeemaker",
           img: coffee_machine,
           href: "",
           isLarge: false,
           isBlue: false,
         },
-        { title: "PRO", img: pro, href: "", isLarge: false, isBlue: true },
+        {
+          title: "PRO",
+          id: "pro",
+          img: pro,
+          href: "",
+          isLarge: false,
+          isBlue: true,
+        },
       ],
     },
     brands: {
@@ -342,10 +558,6 @@ export const resources = {
         ],
         bg: washing_intro,
       },
-      brands: [
-        { title: "START", img: start_pack, href: "" },
-        { title: "BRIX", img: brix_capsules, href: "" },
-      ],
     },
     dishesPage: {
       intro: {
@@ -356,11 +568,197 @@ export const resources = {
         ],
         bg: dishes_intro,
       },
-      brands: [
-        { title: "START", img: start_pack, href: "" },
-        { title: "BRIX", img: brix_capsules, href: "" },
-      ],
     },
+    coffemachinesPage: {
+      intro: {
+        title: "кавомашин",
+        description: [
+          "Забезпечте своїм інструментам і обладнанню чистоту і продовжуйте термін служби з чистими засобами від Aquawheel.",
+          "Наші продукти не тільки ефективно видаляють будь-які забруднення і забезпечують наліт, але і бережний вплив, зберігаючи вашу техніку в ідеальному стані. З Aquawheel ви отримуєте гарантію відмінного результату, підтримку довголіття і постійну працездатність вашого обладнання без ризику для його механізмів, деталей і поверхонь.",
+        ],
+        bg: coffemachines_intro,
+      },
+    },
+    homePage: {
+      intro: {
+        title: "Дому",
+        description: [
+          "Забезпечте своїм інструментам і обладнанню чистоту і продовжуйте термін служби з чистими засобами від Aquawheel.",
+          "Наші продукти не тільки ефективно видаляють будь-які забруднення і забезпечують наліт, але і бережний вплив, зберігаючи вашу техніку в ідеальному стані. З Aquawheel ви отримуєте гарантію відмінного результату, підтримку довголіття і постійну працездатність вашого обладнання без ризику для його механізмів, деталей і поверхонь.",
+        ],
+        bg: home_intro,
+      },
+    },
+    proPage: {
+      intro: {
+        title: "pro",
+        description: [
+          "У розробці засобів для миття посуду, що використовуються в посудомийних машинах, команда Aquawheel уважно ставиться до потреб та очікувань користувачів.",
+          "Наша мета - створювати продукти, що забезпечують не тільки чистоту та гігієну посуду, але й надають їй виняткового блиску, піклуючись про довговічність самої посудомийної машини.",
+        ],
+        bg: pro_intro,
+      },
+    },
+    startPage: {
+      intro: {
+        title: "start",
+        description: [
+          "START став символом для тих, хто високо цінує якість та надійність. Засоби для миття та прання START, перевірені часом, гарантують вирішення будь-яких побутових завдань, забезпечуючи ефективність та зручність у використанні.",
+          "Тут використовуються лише найкращі компоненти з урахуванням споживчих тестів та практик. Унікальні комбінації формул та активних інгредієнтів дозволяють досягати визначних результатів при миття та пранні.",
+          "Завдяки гіпоалергенним властивостям ви можете бути спокійні за здоров'я вашої родини. START піклується про ваш час і спокій, приймаючи на себе простий щоденний клопіт!",
+        ],
+        bg: start_intro,
+      },
+    },
+    brixPage: {
+      intro: {
+        title: "brix",
+        description: [
+          "Ваш маленький, але надійний помічник у турботі про будинок. Бренд Brix створений для дбайливих та економних людей, які цінують практичність та універсальність.",
+          "Brix - це бренд, який позбавляє необхідності вибирати між економією та ефективністю, він є втіленням ідеального балансу, роблячи повсякденні завдання по догляду за будинком простіше і приємніше.",
+          "З Brix кожен день вашого будинку наповнений чистотою та порядком, при цьому ви зберігаєте час та засоби для справжніх життєвих радощів.",
+        ],
+        bg: brix_intro,
+      },
+    },
+
+    products: [
+      {
+        name: "Powercaps Universal",
+        description: "Капсули для прання",
+        capsules: 36,
+        grams: "230g",
+        img: Powercaps_universal,
+        categories: ["washing", "pro", "coffemachines"],
+        producers: ["brix", "start"],
+      },
+      {
+        name: "Powercaps Baby",
+        description: "Капсули для прання",
+        capsules: 36,
+        grams: "230g",
+        img: Powercaps_baby,
+        categories: ["washing", "home", "pro", "coffemachines"],
+        producers: ["brix", "start"],
+      },
+      {
+        name: "Powercaps Color",
+        description: "Капсули для прання",
+        capsules: 36,
+        grams: "230g",
+        img: Powercaps_color,
+        categories: ["washing", "home", "pro", "coffemachines"],
+        producers: ["brix", "start"],
+      },
+      {
+        name: "Powercaps Universal",
+        description: "Капсули для прання",
+        capsules: 12,
+        grams: "230g",
+        img: Powercaps_universal,
+        categories: ["washing", "home", "pro", "coffemachines"],
+        producers: ["brix", "start"],
+      },
+      {
+        name: "Powercaps Baby",
+        description: "Капсули для прання",
+        capsules: 12,
+        grams: "115g",
+        img: Powercaps_baby,
+        categories: ["washing", "home", "pro", "coffemachines"],
+        producers: ["brix", "start"],
+      },
+      {
+        name: "Powercaps Color",
+        description: "Капсули для прання",
+        capsules: 12,
+        grams: "115g",
+        img: Powercaps_color,
+        categories: ["washing", "home", "pro", "coffemachines"],
+        producers: ["brix", "start"],
+      },
+      {
+        name: "Start Classic",
+        description: "Таблетки для миття посуду",
+        capsules: 100,
+        grams: "1.8kg",
+        img: start_classic_100,
+        categories: ["dishes"],
+        producers: null,
+      },
+      {
+        name: "Start Classic",
+        description: "Таблетки для миття посуду",
+        capsules: 60,
+        grams: "1.08kg",
+        img: start_classic_60,
+        categories: ["dishes"],
+        producers: null,
+      },
+      {
+        name: "Start Classic",
+        description: "Таблетки для миття посуду",
+        capsules: 30,
+        grams: "540g",
+        img: start_classic_30,
+        categories: ["dishes"],
+        producers: null,
+      },
+      {
+        name: "Start Maximum",
+        description: "Таблетки для миття посуду",
+        capsules: 90,
+        grams: "115g",
+        img: start_maximum_90,
+        categories: ["dishes"],
+        producers: null,
+      },
+      {
+        name: "Start Maximum",
+        description: "Таблетки для миття посуду",
+        capsules: 55,
+        grams: "115g",
+        img: start_maximum_55,
+        categories: ["dishes"],
+        producers: null,
+      },
+      {
+        name: "Start Maximum",
+        description: "Таблетки для миття посуду",
+        capsules: 28,
+        grams: "115g",
+        img: start_maximum_28,
+        categories: ["dishes"],
+        producers: null,
+      },
+      {
+        name: "Start Powder",
+        description: "Порошок для миття посуду",
+        capsules: null,
+        grams: "1kg",
+        img: start_powder_1kg,
+        categories: ["dishes"],
+        producers: null,
+      },
+      {
+        name: "Start Powder",
+        description: "Порошок для миття посуду",
+        capsules: null,
+        grams: "3kg",
+        img: start_powder_3kg,
+        categories: ["dishes"],
+        producers: null,
+      },
+      {
+        name: "Powercaps Universal",
+        description: "Капсули для прання",
+        capsules: 36,
+        grams: "230g",
+        img: powercaps_universal_750ml,
+        categories: ["home"],
+        producers: null,
+      },
+    ],
   },
 };
 

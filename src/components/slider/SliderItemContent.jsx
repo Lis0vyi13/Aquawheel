@@ -18,7 +18,7 @@ const SliderItemContent = ({ content, mobile }) => {
           <h2 className="font-[600px] tracking-[0.0001em] text-[11px] xs:text-[14px] text-white">
             {subtitle[i]}
           </h2>
-          <div className="absolute left-[51%] top-[40px] xs:top-14 tracking-[0.03em] -translate-x-1/2 h-[30px] w-[176px] text-[12px] xs:h-[50px] xs:w-[240px] xs:text-[16px]">
+          <div className="absolute left-[51%] top-[60px] xs:top-16 tracking-[0.03em] -translate-x-1/2 h-[30px] w-[176px] text-[12px] xs:h-[50px] xs:w-[240px] xs:text-[16px]">
             <Button href={btn.href[i]}>{btn.title}</Button>
           </div>
         </div>

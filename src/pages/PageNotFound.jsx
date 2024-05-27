@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
 
-import Button from "../ui/button/Button";
-
 import { useLanguage } from "../hooks/useLanguage";
+
+import Button from "../ui/button/Button";
 
 import { resources } from "../constants";
 

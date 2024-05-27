@@ -2,64 +2,101 @@ import { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 
 import { useLanguage } from "../hooks/useLanguage";
+import { useSwipeScroll } from "../hooks/useSwipeScroll";
 
-import CategoryPageIntro from "../components/CategoryPageIntro";
+import CategoryPageCategory from "../components/categoryPage/CategoryPageCategory";
+import CategoryPageBrand from "../components/categoryPage/CategoryPageBrand";
+import CategoryPageIntro from "../components/categoryPage/CategoryPageIntro";
 
 import { resources } from "../constants";
-
-import styles from "./brand.module.css";
+import Marquee from "../components/marquee/Marquee";
+import Swiper from "../components/swiper/Swiper";
 
 const CategoryPageLayout = ({ content }) => {
   const language = useLanguage();
   const location = useLocation();
-  const brands = resources[language].brands;
+  const swiperRef = useSwipeScroll();
+
   const [activeBrand, setActiveBrand] = useState(null);
+  const [activeCategory, setActiveCategory] = useState(null);
+
+  const categories = resources[language].categories;
+  const brands = resources[language].brands;
+  const products = resources[language].products;
 
   useEffect(() => {
     scrollTo(0, 0);
   }, [location.pathname]);
-
+  console.log(activeCategory);
+  console.log(
+    products.filter((prod) => prod.categories.includes(activeCategory)),
+  );
   return (
-    <section className="category-page pb-[180px]">
+    <section className="category-page pb-[70px] sm:pb-[170px]">
       <CategoryPageIntro content={content.intro} />
-      <div className="container flex flex-col items-center">
-        <div className="flex mt-[92px] items-center justify-center w-[595px] h-[80px] gap-11">
-          {brands.products.map((brand, i) => {
-            const isActive = i === activeBrand;
-            const isBrix = brand.title === "BRIX";
 
-            const background = isBrix
-              ? `bg-orangeGradient ${isActive ? "" : "opacity-50"}`
-              : `bg-darkBlueGradient ${isActive ? "" : "opacity-50"}`;
-
-            return (
-              <button
-                onClick={() => setActiveBrand(i)}
-                key={i}
-                className={`brand relative rounded-[25px] justify-center items-center flex h-full ${styles.brand}`}
-              >
-                <div
-                  className={`brand cursor-pointer relative after:content-[""] after:duration-300 after:rounded-[25px] after:absolute after:left-0 after:top-0 after:w-full after:h-full after:bg-[#000] after:opacity-0 rounded-[25px] justify-center items-center flex w-[280px] h-full ${styles["brand-bg"]} ${background} [box-shadow:inset_1px_1px_3px_0_rgba(0,_0,_0,_0.35)]`}
-                >
-                  <img
-                    width={isBrix ? "162px" : "110px"}
-                    className={`brand-bg z-[1] absolute left-4 bottom-0`}
-                    src={brand.img}
-                    alt="brand-img"
-                  />
-                  <div className="absolute z-[1] text-center right-[30px] text-white">
-                    <p className="uppercase text-[8px]">
-                      {language === "ENG" ? "Product" : "Продукція"}
-                    </p>
-                    <h3 className="font-bold uppercase text-[27px]">
-                      {brand.title}
-                    </h3>
+      <div className="flex flex-wrap mt-[53px] md:mt-[95px] px-4 items-center justify-center w-full h-[80px] gap-3 md:gap-11">
+        {brands.products.map((brand, i) => (
+          <CategoryPageBrand
+            key={i}
+            isActive={i === activeBrand}
+            isBrix={brand.title === "BRIX"}
+            onClick={() => setActiveBrand(i)}
+            language={language}
+            {...brand}
+          />
+        ))}
+      </div>
+      <section className="products-list">
+        {/* <ul className="list">
+          {activeCategory
+            ? products
+                .filter((prod) => prod.categories.includes(activeCategory))
+                .map((prod, i) => (
+                  <li key={i}>
+                    <div>
+                      <img src={prod.img} alt={prod.name} />
+                    </div>
+                  </li>
+                ))
+            : products.slice(0, 6).map((prod, i) => (
+                <li key={i}>
+                  <div>
+                    <img src={prod.img} alt={prod.name} />
                   </div>
-                </div>
-              </button>
-            );
-          })}
+                </li>
+              ))}
+        </ul> */}
+      </section>
+      <section className="swiper">
+        <div className="container">
+          <div className="flex justify-center overflow-hidden">
+            <div
+              ref={swiperRef}
+              className={`swiper-content select-none h-[80px] mt-[137px] flex justify-start gap-[13px] md:gap-[25px] cursor-grab whitespace-nowrap overflow-auto snap-mandatory noScrollbar`}
+            >
+              {categories.categoriesList.map((ctg) => {
+                return (
+                  <CategoryPageCategory
+                    onClick={() => setActiveCategory(ctg.id)}
+                    isActive={ctg.id === activeCategory}
+                    className={`h-full`}
+                    {...ctg}
+                    key={ctg.title}
+                  >
+                    {ctg.title}
+                  </CategoryPageCategory>
+                );
+              })}
+            </div>
+          </div>
         </div>
+      </section>
+      <div className="marquee mt-[83px] sm:mt-[181px]">
+        <Marquee />
+      </div>
+      <div className="swiper mt-[78px] sm:mt-[178px]">
+        <Swiper />
       </div>
     </section>
   );

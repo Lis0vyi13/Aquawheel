@@ -1,4 +1,4 @@
-import useSlider from "../../hooks/useSlider";
+import { useSlider } from "../../hooks/useSlider";
 
 import SliderNavigationButtons from "./SliderNavigationButtons";
 import SliderItemContent from "./SliderItemContent";

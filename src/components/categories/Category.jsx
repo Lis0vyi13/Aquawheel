@@ -1,6 +1,14 @@
 import styles from "./category.module.css";
 
-const Category = ({ img, name, href, isLarge, isBlue, children }) => {
+const Category = ({
+  img,
+  name,
+  href,
+  isLarge,
+  isBlue,
+  className,
+  children,
+}) => {
   const background = isBlue ? "bg-blueGradient" : "bg-grayGradient";
   const [firstWord, secondWord] = children.split(" ");
 
@@ -11,7 +19,7 @@ const Category = ({ img, name, href, isLarge, isBlue, children }) => {
   return (
     <a
       href={href}
-      className={`category overflow-x-hidden xs:overflow-x-visible relative rounded-[25px] duration-300 p-6 pb-2 h-[105px] xs:h-[180px] ${
+      className={`category overflow-x-hidden xs:overflow-x-visible relative rounded-[25px] duration-300 p-6 pb-2 h-[105px] xs:h-[180px] ${className} ${
         isLarge ? "md:h-[280px]" : "md:h-[250px]"
       }  ${name || "col-span-full"} ${
         styles.category

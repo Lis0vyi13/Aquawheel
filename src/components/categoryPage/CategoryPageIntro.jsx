@@ -1,4 +1,4 @@
-import { useLanguage } from "../hooks/useLanguage";
+import { useLanguage } from "../../hooks/useLanguage";
 
 const CategoryPageIntro = ({ content }) => {
   const language = useLanguage();

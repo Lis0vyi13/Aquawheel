@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useSwipeable } from "react-swipeable";
 
-const useSlider = (SLIDER_IMAGES_LENGTH) => {
+export const useSlider = (SLIDER_IMAGES_LENGTH) => {
   const [slide, setSlide] = useState(0);
   const [intervalId, setIntervalId] = useState(null);
 
@@ -34,5 +34,3 @@ const useSlider = (SLIDER_IMAGES_LENGTH) => {
 
   return { slide, handleNavigationButtonClick, handlers };
 };
-
-export default useSlider;
