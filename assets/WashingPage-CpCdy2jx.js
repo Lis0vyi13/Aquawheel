@@ -1,1 +1,0 @@
-import{u as t,a as e,j as o}from"./index-Cf29pr6l.js";import{C as r}from"./CategoryPageLayout-C3_l74nk.js";import"./SidebarForm-CQGPAYnW.js";const i=()=>{const a=t(),s=e[a].washingPage;return o.jsx(r,{content:s})};export{i as default};
