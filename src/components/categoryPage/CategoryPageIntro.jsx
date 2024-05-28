@@ -1,9 +1,30 @@
+import { useState, useEffect } from "react";
 import { useLanguage } from "../../hooks/useLanguage";
 
 const CategoryPageIntro = ({ content }) => {
   const language = useLanguage();
+  const [descriptionLength] = useState(372);
+  const [truncatedDescriptions, setTruncatedDescriptions] = useState([]);
 
   const text = language === "ENG" ? "PRODUCT FOR" : "ПРОДУКЦІЯ ДЛЯ";
+
+  useEffect(() => {
+    const truncated = [];
+    let remainingLength = descriptionLength;
+
+    for (let i = 0; i < content.description.length; i++) {
+      const descr = content.description[i];
+      if (remainingLength - descr.length > 0) {
+        truncated.push(descr);
+        remainingLength -= descr.length;
+      } else {
+        truncated.push(descr.slice(0, remainingLength) + "...");
+        break;
+      }
+    }
+    setTruncatedDescriptions(truncated);
+  }, [descriptionLength, content.description]);
+
   return (
     <section className="category-page-intro">
       <div className="container">
@@ -17,12 +38,12 @@ const CategoryPageIntro = ({ content }) => {
               {content.title}
             </h1>
             <div className="description text-[16px] flex flex-col gap-6 mt-4 lg:mt-8">
-              {content.description.map((descr, i) => (
+              {truncatedDescriptions.map((descr, i) => (
                 <p
+                  key={i}
                   className={`${
                     i > 0 ? "hidden mdLg:block" : "hidden md:block"
                   }`}
-                  key={i}
                 >
                   {descr}
                 </p>

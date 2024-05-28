@@ -1,24 +1,35 @@
+import { useRef, useState } from "react";
+
 import { useLanguage } from "../../hooks/useLanguage";
 import { useActions } from "../../hooks/useActions";
 
 import Button from "../../ui/button/Button";
 
 import { resources } from "../../constants";
+import Modal from "../Modal";
 
 const Form = ({ sidebarForm }) => {
   const language = useLanguage();
+
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const formRef = useRef();
+
   const content = resources[language].form;
   const title = content.title;
+
   const [firstTitleWord, secondTitleWord] = title.split(" ");
 
   const { toggleForm } = useActions();
 
   const onSubmitHandler = (e) => {
     e.preventDefault();
+    setIsModalOpen(true);
+    formRef.current.reset();
   };
 
   return (
     <form
+      ref={formRef}
       onSubmit={onSubmitHandler}
       className="form text-white mt-[80px] lg:mt-[148px]"
     >
@@ -42,7 +53,7 @@ const Form = ({ sidebarForm }) => {
               key={i}
               required={input.required}
               type={input.type}
-              placeholder={input.placeholder}
+              placeholder={input.placeholder + (input.required ? "*" : "")}
             />
           );
         })}
@@ -66,6 +77,9 @@ const Form = ({ sidebarForm }) => {
               {content.btn}
             </Button>
           </div>
+        )}
+        {isModalOpen && (
+          <Modal {...content.modal} onClose={() => setIsModalOpen(false)} />
         )}
       </div>
     </form>

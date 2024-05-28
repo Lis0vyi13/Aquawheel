@@ -12,6 +12,7 @@ body {
   font-family: "Mont";
   overflow-x: hidden;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 .container {
@@ -44,3 +45,4 @@ h6 {
   -webkit-overflow-scrolling: touch;
   scrollbar-width: none;
 }
+

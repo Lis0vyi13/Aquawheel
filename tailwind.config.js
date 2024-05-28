@@ -43,6 +43,20 @@ export default {
         activeBrandBrix:
           "radial-gradient(91.7% 107.54% at 39.61% 56.25%, rgb(255, 178, 84) 0%, rgb(255, 74, 0) 82.65896439552307%);",
       },
+      keyframes: {
+        slideIn: {
+          "0%": { opacity: 0, transform: "translateX(100%)" },
+          "100%": { opacity: 1, transform: "translateX(0)" },
+        },
+        slideOut: {
+          "0%": { opacity: 1, transform: "translateX(0)" },
+          "100%": { opacity: 0, transform: "translateX(100%)" },
+        },
+      },
+      animation: {
+        slideIn: "slideIn 0.5s forwards",
+        slideOut: "slideOut 0.5s forwards",
+      },
     },
   },
   plugins: [],

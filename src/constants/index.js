@@ -1,7 +1,7 @@
 import start from "/img/start.jpeg";
-import brix from "/img/brix.png";
-import brix_small from "/img/brix_small.jpg";
-import start_small from "/img/start_small.jpg";
+import brix from "/img/brix.webp";
+import brix_small from "/img/brix_small.webp";
+import start_small from "/img/start_small.webp";
 
 import coffee_machine from "/img/categories/coffee-machine.png";
 import dishes from "/img/categories/dishes.png";
@@ -72,7 +72,7 @@ export const resources = {
           title: "For dishes",
           id: "dishes",
           img: dishes,
-          href: "",
+          href: "/#/dishes",
           isLarge: true,
           isBlue: true,
         },
@@ -80,7 +80,7 @@ export const resources = {
           title: "For washing",
           id: "washing",
           img: washing,
-          href: "",
+          href: "/#/washing",
           isLarge: true,
           isBlue: false,
         },
@@ -88,7 +88,7 @@ export const resources = {
           title: "For home",
           id: "home",
           img: for_home,
-          href: "",
+          href: "/#/home",
           isLarge: false,
           isBlue: false,
         },
@@ -96,7 +96,7 @@ export const resources = {
           title: "For coffeemaker",
           id: "coffeemaker",
           img: coffee_machine,
-          href: "",
+          href: "/#/coffeemachines",
           isLarge: false,
           isBlue: false,
         },
@@ -104,7 +104,7 @@ export const resources = {
           title: "PRO",
           id: "pro",
           img: pro,
-          href: "",
+          href: "/#/pro",
           isLarge: false,
           isBlue: true,
         },
@@ -113,8 +113,8 @@ export const resources = {
     brands: {
       title: "Our brands",
       products: [
-        { title: "START", img: start_pack, href: "" },
-        { title: "BRIX", img: brix_capsules, href: "" },
+        { title: "START", img: start_pack, href: "/#/start" },
+        { title: "BRIX", img: brix_capsules, href: "/#/brix" },
       ],
     },
     innovative_purity: {
@@ -181,6 +181,7 @@ export const resources = {
           required: false,
         },
       ],
+      modal: { message: "The form was submitted successfully!" },
       btn: "CONTACT US",
     },
     footer: {
@@ -262,7 +263,6 @@ export const resources = {
         description: [
           "Your small but reliable helper in taking care of the house. The Brix brand was created for careful and economical people who value practicality and versatility.",
           "Brix is a brand that eliminates the need to choose between economy and efficiency, it embodies the perfect balance, making everyday tasks of home care easier and more enjoyable.",
-          "With Brix, every day of your home is filled with cleanliness and order, while you save time and resources for the real joys of life.",
         ],
         bg: brix_intro,
       },
@@ -425,7 +425,7 @@ export const resources = {
           title: "Для посуду",
           id: "dishes",
           img: dishes,
-          href: "",
+          href: "/#/dishes",
           isLarge: true,
           isBlue: true,
         },
@@ -433,7 +433,7 @@ export const resources = {
           title: "Для прання",
           id: "washing",
           img: washing,
-          href: "",
+          href: "/#/washing",
           isLarge: true,
           isBlue: false,
         },
@@ -441,7 +441,7 @@ export const resources = {
           title: "Для дому",
           id: "home",
           img: for_home,
-          href: "",
+          href: "/#/home",
           isLarge: false,
           isBlue: false,
         },
@@ -449,7 +449,7 @@ export const resources = {
           title: "Для кавомашин",
           id: "coffeemaker",
           img: coffee_machine,
-          href: "",
+          href: "/#/coffemachines",
           isLarge: false,
           isBlue: false,
         },
@@ -457,7 +457,7 @@ export const resources = {
           title: "PRO",
           id: "pro",
           img: pro,
-          href: "",
+          href: "/#/pro",
           isLarge: false,
           isBlue: true,
         },
@@ -466,8 +466,8 @@ export const resources = {
     brands: {
       title: "Наші бренди",
       products: [
-        { title: "START", img: start_pack, href: "" },
-        { title: "BRIX", img: brix_capsules, href: "" },
+        { title: "START", img: start_pack, href: "/#/start" },
+        { title: "BRIX", img: brix_capsules, href: "/#/brix" },
       ],
     },
     innovative_purity: {
@@ -503,7 +503,6 @@ export const resources = {
         { img: swiper_3, alt: "swiper__img-3" },
         { img: swiper_4, alt: "swiper__img-4" },
         { img: swiper_5, alt: "swiper__img-5" },
-        { img: swiper_1, alt: "swiper__img-1" },
       ],
     },
     form: {
@@ -535,6 +534,7 @@ export const resources = {
           required: false,
         },
       ],
+      modal: { message: "The form was submitted successfully!" },
       btn: "ЗВ’ЯЗАТИСЯ З НАМИ",
     },
     footer: {
@@ -616,7 +616,6 @@ export const resources = {
         description: [
           "Ваш маленький, але надійний помічник у турботі про будинок. Бренд Brix створений для дбайливих та економних людей, які цінують практичність та універсальність.",
           "Brix - це бренд, який позбавляє необхідності вибирати між економією та ефективністю, він є втіленням ідеального балансу, роблячи повсякденні завдання по догляду за будинком простіше і приємніше.",
-          "З Brix кожен день вашого будинку наповнений чистотою та порядком, при цьому ви зберігаєте час та засоби для справжніх життєвих радощів.",
         ],
         bg: brix_intro,
       },
@@ -629,7 +628,7 @@ export const resources = {
         capsules: 36,
         grams: "230g",
         img: Powercaps_universal,
-        categories: ["washing", "pro", "coffemachines"],
+        categories: ["washing", "pro", "coffeemaker"],
         producers: ["brix", "start"],
       },
       {
@@ -638,7 +637,7 @@ export const resources = {
         capsules: 36,
         grams: "230g",
         img: Powercaps_baby,
-        categories: ["washing", "home", "pro", "coffemachines"],
+        categories: ["washing", "home", "pro", "coffeemaker"],
         producers: ["brix", "start"],
       },
       {
@@ -647,7 +646,7 @@ export const resources = {
         capsules: 36,
         grams: "230g",
         img: Powercaps_color,
-        categories: ["washing", "home", "pro", "coffemachines"],
+        categories: ["washing", "home", "pro", "coffeemaker"],
         producers: ["brix", "start"],
       },
       {
@@ -656,7 +655,7 @@ export const resources = {
         capsules: 12,
         grams: "230g",
         img: Powercaps_universal,
-        categories: ["washing", "home", "pro", "coffemachines"],
+        categories: ["washing", "home", "pro", "coffeemaker"],
         producers: ["brix", "start"],
       },
       {
@@ -665,7 +664,7 @@ export const resources = {
         capsules: 12,
         grams: "115g",
         img: Powercaps_baby,
-        categories: ["washing", "home", "pro", "coffemachines"],
+        categories: ["washing", "home", "pro", "coffeemaker"],
         producers: ["brix", "start"],
       },
       {
@@ -674,7 +673,7 @@ export const resources = {
         capsules: 12,
         grams: "115g",
         img: Powercaps_color,
-        categories: ["washing", "home", "pro", "coffemachines"],
+        categories: ["washing", "home", "pro", "coffeemaker"],
         producers: ["brix", "start"],
       },
       {

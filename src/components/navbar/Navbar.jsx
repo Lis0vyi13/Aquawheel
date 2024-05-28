@@ -1,6 +1,8 @@
 import { useEffect, useRef } from "react";
 import { createPortal } from "react-dom";
 
+import { motion } from "framer-motion";
+
 import { useLanguage } from "../../hooks/useLanguage";
 import { useBurger } from "../../hooks/useBurger";
 import { useActions } from "../../hooks/useActions";
@@ -71,11 +73,14 @@ const Navbar = () => {
         </nav>
       </div>
       {createPortal(
-        <div
+        <motion.div
           ref={burgerMenuPortal}
           className={`xsSm:hidden fixed z-50 left-0 top-0 duration-300 bg-[linear-gradient(248deg,_#88d2f6_0%,_#43acdf_100%)] w-full h-full ${
             isBurgerOpen ? "" : "opacity-0 pointer-events-none"
           }`}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: isBurgerOpen ? 1 : 0 }}
+          transition={{ duration: 0.3 }}
         >
           <div className="burger-menu container relative z-[50]">
             <div className="flex items-center mt-[2.6rem]">
@@ -88,7 +93,7 @@ const Navbar = () => {
             </div>
             <FooterContent />
           </div>
-        </div>,
+        </motion.div>,
         document.getElementById("root"),
       )}
     </header>

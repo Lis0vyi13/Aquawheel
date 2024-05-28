@@ -1,3 +1,5 @@
+import { motion } from "framer-motion";
+
 import { useLanguage } from "../../hooks/useLanguage";
 
 import Category from "./Category";
@@ -19,7 +21,13 @@ const Categories = () => {
     styles.gridItem5,
   ];
   return (
-    <section className="categories mt-9 sm:mt-[90px]">
+    <motion.section
+      className="categories mt-9 sm:mt-[90px]"
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      transition={{ duration: 0.5 }}
+      viewport={{ once: true, amount: 0.1 }}
+    >
       <div className="container">
         <Title>{content.title}</Title>
         <div
@@ -32,7 +40,7 @@ const Categories = () => {
           ))}
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 

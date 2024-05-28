@@ -1,3 +1,5 @@
+import { motion } from "framer-motion";
+
 import { useLanguage } from "../hooks/useLanguage";
 
 import ContentBlock from "../ui/ContentBlock";
@@ -10,11 +12,17 @@ const PrivateLabel = () => {
   const img = content.img;
 
   return (
-    <section className="private-label sm:mt-[173px]">
+    <motion.section
+      className="private-label sm:mt-[173px]"
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      transition={{ duration: 0.5 }}
+      viewport={{ once: true, amount: 0.1 }}
+    >
       <div className="container">
         <ContentBlock reversed img={img} info={content} />
       </div>
-    </section>
+    </motion.section>
   );
 };
 
