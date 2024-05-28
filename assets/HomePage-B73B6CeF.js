@@ -1,0 +1,1 @@
+import{u as o,a as t,j as s}from"./index-Cf29pr6l.js";import{C as r}from"./CategoryPageLayout-C3_l74nk.js";import"./SidebarForm-CQGPAYnW.js";const m=()=>{const a=o(),e=t[a].homePage;return s.jsx(r,{content:e})};export{m as default};
