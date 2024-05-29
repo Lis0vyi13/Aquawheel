@@ -1,0 +1,1 @@
+import{u as s,a as e,j as o}from"./index-DNaClLkq.js";import{C as r}from"./CategoryPageLayout-DSuvInYX.js";import"./SidebarForm-DbbHo3_M.js";const m=()=>{const t=s(),a=e[t].startPage;return o.jsx(r,{content:a})};export{m as default};

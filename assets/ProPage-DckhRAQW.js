@@ -1,0 +1,1 @@
+import{u as t,a as e,j as r}from"./index-DNaClLkq.js";import{C as s}from"./CategoryPageLayout-DSuvInYX.js";import"./SidebarForm-DbbHo3_M.js";const m=()=>{const a=t(),o=e[a].proPage;return r.jsx(s,{content:o})};export{m as default};
