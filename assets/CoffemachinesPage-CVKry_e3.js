@@ -1,0 +1,1 @@
+import{u as o,a as s,j as t}from"./index-CJUVqtZQ.js";import{C as r}from"./CategoryPageLayout-CoXHoQZc.js";import"./SidebarForm-Cxov1BXy.js";const g=()=>{const a=o(),e=s[a].coffemachinesPage;return t.jsx(r,{content:e})};export{g as default};
