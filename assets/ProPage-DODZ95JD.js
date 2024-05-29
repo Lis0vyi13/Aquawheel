@@ -1,1 +1,0 @@
-import{u as t,a as e,j as r}from"./index-DpFGdLq8.js";import{C as s}from"./CategoryPageLayout-DFU2RmRH.js";import"./SidebarForm-B2RLgl5a.js";const m=()=>{const a=t(),o=e[a].proPage;return r.jsx(s,{content:o})};export{m as default};

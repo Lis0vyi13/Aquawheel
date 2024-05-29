@@ -1,0 +1,1 @@
+import{u as e,a as o,j as r}from"./index-BXiBOfDm.js";import{C as s}from"./CategoryPageLayout-D1d-qtaF.js";import"./SidebarForm-D5U5tcxx.js";const i=()=>{const a=e(),t=o[a].brixPage;return r.jsx(s,{content:t})};export{i as default};
