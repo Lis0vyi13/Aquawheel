@@ -1,1 +1,0 @@
-import{u as t,a as e,j as o}from"./index-DNaClLkq.js";import{C as r}from"./CategoryPageLayout-DSuvInYX.js";import"./SidebarForm-DbbHo3_M.js";const i=()=>{const a=t(),s=e[a].washingPage;return o.jsx(r,{content:s})};export{i as default};
