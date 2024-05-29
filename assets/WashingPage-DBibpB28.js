@@ -1,0 +1,1 @@
+import{u as t,a as e,j as o}from"./index-DpFGdLq8.js";import{C as r}from"./CategoryPageLayout-DFU2RmRH.js";import"./SidebarForm-B2RLgl5a.js";const i=()=>{const a=t(),s=e[a].washingPage;return o.jsx(r,{content:s})};export{i as default};

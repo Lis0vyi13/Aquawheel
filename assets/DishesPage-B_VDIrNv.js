@@ -1,1 +1,0 @@
-import{u as e,a as t,j as o}from"./index-UXIEmj_X.js";import{C as r}from"./CategoryPageLayout-Mvv98mcR.js";import"./SidebarForm-DHTQKln3.js";const i=()=>{const s=e(),a=t[s].dishesPage;return o.jsx(r,{content:a})};export{i as default};
