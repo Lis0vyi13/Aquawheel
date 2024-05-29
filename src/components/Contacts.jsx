@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 import { useLanguage } from "../hooks/useLanguage";
 
 import { resources } from "../constants";
@@ -12,12 +14,12 @@ const Contacts = ({ sidebarForm }) => {
         sidebarForm ? "hidden lg:block" : "block"
       } contacts text-white mt-[53px] xs:mt-[65px] md:mt-[80px] lg:mt-[222px] max-w-[415px]`}
     >
-      <a
+      <Link
         className="inline-block w-[202px] h-[43px] sm:w-[274px] sm:h-[58px]"
-        href="#"
+        to="#"
       >
         <img src={content.logo} alt="logo" />
-      </a>
+      </Link>
       <div className="contacts-text mt-[24px] md:mt-[39px] w-fit flex flex-col font-semibold text-[25px] xs:text-[29px] sm:text-[33px]">
         <a
           className="duration-300 hover:text-whiteHover"

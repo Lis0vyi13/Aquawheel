@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 import styles from "./brand.module.css";
 
 const Brand = ({ title, img, href, lang }) => {
@@ -5,8 +7,8 @@ const Brand = ({ title, img, href, lang }) => {
     title === "BRIX" ? "bg-orangeGradient" : "bg-darkBlueGradient";
 
   return (
-    <a
-      href={href}
+    <Link
+      to={href}
       className={`brand relative rounded-[25px] justify-center items-center flex h-full ${styles.brand}`}
     >
       <div
@@ -33,7 +35,7 @@ const Brand = ({ title, img, href, lang }) => {
         </p>
         <h1 className="text-[34px] sm:text-[45px] font-bold">{title}</h1>
       </div>
-    </a>
+    </Link>
   );
 };
 

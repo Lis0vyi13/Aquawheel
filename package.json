@@ -1,5 +1,6 @@
 {
   "name": "aquawheel",
+  "homepage": "https://lis0vyi13.github.io/Aquawheel/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -35,3 +36,4 @@
     "vite": "^5.2.0"
   }
 }
+

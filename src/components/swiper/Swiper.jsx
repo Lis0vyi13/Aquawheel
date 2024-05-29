@@ -35,6 +35,7 @@ const Swiper = () => {
               initial={{ opacity: 0, x: -100 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.5, delay: i * 0.2 }}
+              viewport={{ once: true, amount: 0.1 }}
             />
           ))}
         </div>

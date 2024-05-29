@@ -6,9 +6,9 @@ import Slider from "./slider/Slider";
 
 import { resources } from "../constants";
 
-const MainPageIntro = () => {
+const Intro = () => {
   const language = useLanguage();
-  const content = resources[language].mainPageIntro;
+  const content = resources[language].intro;
 
   return (
     <motion.section
@@ -27,4 +27,4 @@ const MainPageIntro = () => {
   );
 };
 
-export default MainPageIntro;
+export default Intro;

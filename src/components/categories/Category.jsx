@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 import styles from "./category.module.css";
 
 const Category = ({
@@ -17,8 +19,8 @@ const Category = ({
   const textColor = isBlue ? "text-white" : "text-[#000]";
 
   return (
-    <a
-      href={href}
+    <Link
+      to={href}
       className={`category overflow-x-hidden xs:overflow-x-visible relative rounded-[25px] duration-300 p-6 pb-2 h-[105px] xs:h-[180px] ${className} ${
         isLarge ? "md:h-[280px]" : "md:h-[250px]"
       }  ${name || "col-span-full"} ${
@@ -45,7 +47,7 @@ const Category = ({
         src={img}
         alt={name}
       />
-    </a>
+    </Link>
   );
 };
 

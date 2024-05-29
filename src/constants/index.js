@@ -29,13 +29,13 @@ import swiper_5 from "/img/swiper/swiper_5.png";
 
 import aquawheel_logo from "/icons/aquawheel_white.svg";
 
-import brix_intro from "/img/intros/brix_intro.webp";
-import start_intro from "/img/intros/start_intro.webp";
-import coffemachines_intro from "/img/intros/coffemachines_intro.webp";
-import dishes_intro from "/img/intros/dishes_intro.webp";
+import brix_intro from "/img/intros/brix_intro.avif";
+import start_intro from "/img/intros/start_intro.avif";
+import coffemachines_intro from "/img/intros/coffemachines_intro.avif";
+import dishes_intro from "/img/intros/dishes_intro.avif";
 import home_intro from "/img/intros/home_intro.webp";
-import pro_intro from "/img/intros/pro_intro.webp";
-import washing_intro from "/img/intros/washing_intro.webp";
+import pro_intro from "/img/intros/pro_intro.avif";
+import washing_intro from "/img/intros/washing_intro.avif";
 
 import Powercaps_baby from "/products/Powercaps_baby.png";
 import Powercaps_color from "/products/Powercaps_color.png";
@@ -57,8 +57,8 @@ export const resources = {
     navbar: {
       btn: { title: "Contact Us", href: "" },
     },
-    mainPageIntro: {
-      btn: { title: "GO TO CATALOG", href: ["/#/washing", "/#/washing"] },
+    intro: {
+      btn: { title: "GO TO CATALOG", href: ["start", "brix"] },
       title: ["POWERCAPS", "DISH WASH"],
       subtitle: [
         "Careful performance under any conditions",
@@ -72,7 +72,7 @@ export const resources = {
           title: "For dishes",
           id: "dishes",
           img: dishes,
-          href: "/#/dishes",
+          href: "dishes",
           isLarge: true,
           isBlue: true,
         },
@@ -80,7 +80,7 @@ export const resources = {
           title: "For washing",
           id: "washing",
           img: washing,
-          href: "/#/washing",
+          href: "washing",
           isLarge: true,
           isBlue: false,
         },
@@ -88,7 +88,7 @@ export const resources = {
           title: "For home",
           id: "home",
           img: for_home,
-          href: "/#/home",
+          href: "home",
           isLarge: false,
           isBlue: false,
         },
@@ -96,7 +96,7 @@ export const resources = {
           title: "For coffeemaker",
           id: "coffeemaker",
           img: coffee_machine,
-          href: "/#/coffeemachines",
+          href: "coffeemachines",
           isLarge: false,
           isBlue: false,
         },
@@ -104,7 +104,7 @@ export const resources = {
           title: "PRO",
           id: "pro",
           img: pro,
-          href: "/#/pro",
+          href: "pro",
           isLarge: false,
           isBlue: true,
         },
@@ -113,8 +113,8 @@ export const resources = {
     brands: {
       title: "Our brands",
       products: [
-        { title: "START", img: start_pack, href: "/#/start" },
-        { title: "BRIX", img: brix_capsules, href: "/#/brix" },
+        { title: "START", img: start_pack, href: "start" },
+        { title: "BRIX", img: brix_capsules, href: "brix" },
       ],
     },
     innovative_purity: {
@@ -410,8 +410,8 @@ export const resources = {
     navbar: {
       btn: { title: "Зв'язатися з нами", href: "" },
     },
-    mainPageIntro: {
-      btn: { title: "ПЕРЕЙТИ В КАТАЛОГ", href: ["/#/washing", "/#/washing"] },
+    intro: {
+      btn: { title: "ПЕРЕЙТИ В КАТАЛОГ", href: ["start", "brix"] },
       title: ["POWERCAPS", "DISH WASH"],
       subtitle: [
         "Дбайлива ефективність за будь-яких умов",
@@ -425,7 +425,7 @@ export const resources = {
           title: "Для посуду",
           id: "dishes",
           img: dishes,
-          href: "/#/dishes",
+          href: "dishes",
           isLarge: true,
           isBlue: true,
         },
@@ -433,7 +433,7 @@ export const resources = {
           title: "Для прання",
           id: "washing",
           img: washing,
-          href: "/#/washing",
+          href: "washing",
           isLarge: true,
           isBlue: false,
         },
@@ -441,7 +441,7 @@ export const resources = {
           title: "Для дому",
           id: "home",
           img: for_home,
-          href: "/#/home",
+          href: "home",
           isLarge: false,
           isBlue: false,
         },
@@ -449,7 +449,7 @@ export const resources = {
           title: "Для кавомашин",
           id: "coffeemaker",
           img: coffee_machine,
-          href: "/#/coffemachines",
+          href: "coffemachines",
           isLarge: false,
           isBlue: false,
         },
@@ -457,7 +457,7 @@ export const resources = {
           title: "PRO",
           id: "pro",
           img: pro,
-          href: "/#/pro",
+          href: "pro",
           isLarge: false,
           isBlue: true,
         },
@@ -466,8 +466,8 @@ export const resources = {
     brands: {
       title: "Наші бренди",
       products: [
-        { title: "START", img: start_pack, href: "/#/start" },
-        { title: "BRIX", img: brix_capsules, href: "/#/brix" },
+        { title: "START", img: start_pack, href: "start" },
+        { title: "BRIX", img: brix_capsules, href: "brix" },
       ],
     },
     innovative_purity: {

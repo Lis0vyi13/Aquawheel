@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 import styles from "../brands/brand.module.css";
 
 const CategoryPageBrand = ({
@@ -14,8 +16,8 @@ const CategoryPageBrand = ({
 
   const imgSize = isBrix ? "w-[96px] md:w-[162px]" : "w-[69px] md:w-[110px]";
   return (
-    <a
-      href={href}
+    <Link
+      to={href}
       className={`brand relative rounded-[25px] justify-center items-center flex h-full ${styles.brand}`}
     >
       <div
@@ -35,7 +37,7 @@ const CategoryPageBrand = ({
           </h3>
         </div>
       </div>
-    </a>
+    </Link>
   );
 };
 export default CategoryPageBrand;
