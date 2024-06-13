@@ -17,7 +17,7 @@ const CategoryPageBrand = ({
   const imgSize = isBrix ? "w-[96px] md:w-[162px]" : "w-[69px] md:w-[110px]";
   return (
     <Link
-      to={href}
+      to={"/" + href}
       className={`brand relative rounded-[25px] justify-center items-center flex h-full ${styles.brand}`}
     >
       <div

@@ -1,14 +1,12 @@
-import {
-  MainPage,
-  PageNotFound,
-  WashingPage,
-  ProPage,
-  HomePage,
-  DishesPage,
-  CoffemachinesPage,
-  StartPage,
-  BrixPage,
-} from "./lazyComponents";
+import MainPage from "../pages/MainPage";
+import PageNotFound from "../pages/PageNotFound";
+import WashingPage from "../pages/WashingPage";
+import ProPage from "../pages/ProPage";
+import HomePage from "../pages/HomePage";
+import DishesPage from "../pages/DishesPage";
+import CoffemachinesPage from "../pages/CoffemachinesPage";
+import StartPage from "../pages/StartPage";
+import BrixPage from "../pages/BrixPage";
 
 const routes = [
   { path: "/", element: <MainPage />, index: true },
